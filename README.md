@@ -122,10 +122,11 @@ notes-app/
    @tailwind components;
    @tailwind utilities;
    ```
-4. **To run the backend locally while using the frontend:**
+4️⃣ To run the backend locally while using the frontend:
+
 1️⃣ Open:
 
-go this file
+swift
 Copy
 Edit
 Notes-Website-KRAZY-HERD/frontend/src/services/noteService.js
@@ -143,7 +144,7 @@ Edit
 const API_BASE_URL = "http://localhost:5000/api";
 ✅ This will connect your frontend to your local backend for development and testing.
 
-4. **Start the development server:**
+5. **Start the development server:**
    ```bash
    npm run dev
    ```
