@@ -119,29 +119,8 @@ notes-app/
       ```
    
    This ensures your local frontend connects to your local backend running on port 5000.
-   
-4. **Setup Tailwind CSS:**
-   Create `tailwind.config.js`:
-   ```javascript
-   module.exports = {
-     content: [
-       "./src/**/*.{js,jsx,ts,tsx}",
-     ],
-     theme: {
-       extend: {},
-     },
-     plugins: [],
-   }
-   ```
 
-   Update `src/index.css`:
-   ```css
-   @tailwind base;
-   @tailwind components;
-   @tailwind utilities;
-   ```
-
-5. **Start the development server:**
+4. **Start the development server:**
    ```bash
    npm run dev
    ```
