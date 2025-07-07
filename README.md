@@ -101,8 +101,26 @@ notes-app/
    ```bash
    npm install
    ```
+
+3. **Production vs Local Development Configuration:**
    
-3. **Setup Tailwind CSS:**
+   **⚠️ Important:** This project is currently configured for production deployment. The `API_BASE_URL` variable in `frontend/src/services/noteService.js` is set to the production backend URL:
+   ```javascript
+   const API_BASE_URL = "https://notes-website-krazy-herd-production.up.railway.app/api";
+   ```
+   
+   **For Local Development:** If you want to run the frontend locally and connect it to your local backend server, you must change the `API_BASE_URL` in the `noteService.js` file:
+   
+   1. Open `frontend/src/services/noteService.js`
+   2. Find the line with the production URL
+   3. Replace it with:
+      ```javascript
+      const API_BASE_URL = "http://localhost:5000/api";
+      ```
+   
+   This ensures your local frontend connects to your local backend running on port 5000.
+   
+4. **Setup Tailwind CSS:**
    Create `tailwind.config.js`:
    ```javascript
    module.exports = {
@@ -122,27 +140,6 @@ notes-app/
    @tailwind components;
    @tailwind utilities;
    ```
-4️⃣ To run the backend locally while using the frontend:
-
-1️⃣ Open:
-
-swift
-Copy
-Edit
-Notes-Website-KRAZY-HERD/frontend/src/services/noteService.js
-2️⃣ Find:
-
-js
-Copy
-Edit
-const API_BASE_URL = "https://notes-website-krazy-herd-production.up.railway.app/api";
-3️⃣ Replace it with:
-
-js
-Copy
-Edit
-const API_BASE_URL = "http://localhost:5000/api";
-✅ This will connect your frontend to your local backend for development and testing.
 
 5. **Start the development server:**
    ```bash
