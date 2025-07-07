@@ -101,7 +101,7 @@ notes-app/
    ```bash
    npm install
    ```
-
+   
 3. **Setup Tailwind CSS:**
    Create `tailwind.config.js`:
    ```javascript
@@ -122,13 +122,33 @@ notes-app/
    @tailwind components;
    @tailwind utilities;
    ```
+4. **To run the backend locally while using the frontend:**
+1️⃣ Open:
+
+go this file
+Copy
+Edit
+Notes-Website-KRAZY-HERD/frontend/src/services/noteService.js
+2️⃣ Find:
+
+js
+Copy
+Edit
+const API_BASE_URL = "https://notes-website-krazy-herd-production.up.railway.app/api";
+3️⃣ Replace it with:
+
+js
+Copy
+Edit
+const API_BASE_URL = "http://localhost:5000/api";
+✅ This will connect your frontend to your local backend for development and testing.
 
 4. **Start the development server:**
    ```bash
-   npm start
+   npm run dev
    ```
 
-   The app will open on `http://localhost:3000`
+   The app will open on `http://localhost:5173/`
 
 ## API Endpoints
 
