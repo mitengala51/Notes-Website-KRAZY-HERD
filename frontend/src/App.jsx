@@ -25,7 +25,7 @@ const App = () => {
       if (isInitialLoad) {
         setInitialLoading(true);
       } else {
-        setUpdating(true);
+        setUpdating(false);
       }
 
       const [notesResponse, tagsResponse] = await Promise.all([
