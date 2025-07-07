@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // API Configuration
-const API_BASE_URL = 'notes-website-krazy-herd-production.up.railway.app/api';
+const API_BASE_URL = 'https://notes-website-krazy-herd-production.up.railway.app/api';
 
 // Create axios instance with default config
 const api = axios.create({
